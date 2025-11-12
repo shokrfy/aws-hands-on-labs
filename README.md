@@ -1,69 +1,78 @@
-# ☁️ AWS Hands-on Labs Documentation / توثيق تجارب AWS العملية
+# ☁️ AWS Hands-on Labs Documentation
 
-هذا المستودع يحتوي توثيق عملي لتجارب التفاعل مع AWS بثلاث طرق: **Console (واجهة الويب)**، **CLI (سطر الأوامر)**، و**SDK (بايثون - Boto3)**.
-This repository contains documentation and hands-on labs demonstrating the three main methods of interacting with AWS.
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-Cloud%20Foundations-orange?style=for-the-badge&logo=amazonaws" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Markdown-blue?style=for-the-badge" />
+</p>
 
 ---
 
-## 🧭 الهدف / Objective
-- تجربة وممارسة الطرق الثلاث للتعامل مع AWS (Console, CLI, SDK).  
-- توثيق الخطوات والأوامر والكود ولقطات الشاشة لكل تجربة.  
-- بناء Portfolio عملي على GitHub.
+## 🚀 Overview
 
-## 📂 هيكل المجلدات / Repository structure
-```text
+Welcome to my **AWS Hands-on Labs** repository — a complete documentation of my practical exercises while learning **AWS Cloud Foundations**.
+
+This project demonstrates how to interact with AWS using **three different approaches**:
+1. **AWS Management Console (GUI)**
+2. **AWS Command Line Interface (CLI)**
+3. **AWS SDK for Python (Boto3)**
+
+Each section contains detailed steps, commands, code examples, and screenshots of my work.
+
+---
+
+## 🧠 Learning Objectives
+
+- Understand how to interact with AWS resources using multiple methods  
+- Build a solid foundation in AWS Cloud fundamentals  
+- Gain hands-on experience with real AWS services  
+- Practice documentation and version control with Git and GitHub  
+
+---
+
+## 🧩 Labs Included
+
+| # | Lab Title | Method | Status | Link |
+|---|------------|---------|--------|------|
+| 1 | AWS Management Console | GUI | ✅ Completed | [View Lab](01-AWS-Console/console-lab.md) |
+| 2 | AWS Command Line Interface (CLI) | CLI | ✅ Completed | [View Lab](02-AWS-CLI/cli-lab.md) |
+| 3 | AWS SDK for Python (Boto3) | SDK | ✅ Completed | [View Lab](03-AWS-SDK/sdk-lab.md) |
+
+---
+
+## ⚙️ Tech Stack
+
+| Category | Tools & Services |
+|-----------|------------------|
+| **Cloud Provider** | Amazon Web Services (AWS) |
+| **Programming Language** | Python (for SDK) |
+| **Command-line Tool** | AWS CLI v2 |
+| **Documentation** | Markdown (GitHub-flavored) |
+| **Version Control** | Git & GitHub |
+| **Editor** | Visual Studio Code |
+| **OS** | Windows 10 / PowerShell 7 |
+
+---
+
+## 🗂️ Repository Structure
+
+```bash
 aws-hands-on-labs/
 │
-├── README.md
-├── .gitignore
-├── images/                    # ضع لقطات الشاشة هنا (مثلاً: console-1.png)
-├── 01-AWS-Console/
+├── README.md                   # Main documentation (this file)
+│
+├── 01-AWS-Console/             # Console Lab
 │   └── console-lab.md
-├── 02-AWS-CLI/
+│
+├── 02-AWS-CLI/                 # CLI Lab
 │   └── cli-lab.md
-└── 03-AWS-SDK/
-    └── sdk-lab.md
-```
-
-## ✅ نصائح للمظهر الاحترافي / Pro tips
-- استخدم **صور (screenshots)** لكل خطوة داخل مجلد `images/` وادمجها داخل ملفات الـ Markdown.  
-- استخدم جداول، أقسام `Code blocks`، وعناوين واضحة.  
-- اربط كل تجربة بروابط رسمية من AWS Docs.  
-- حدث README بعد كل تجربة مع قسم تغيير التحديثات (CHANGELOG).
-
----
-
-## 🧩 Labs Overview (حالة العمل)
-| Lab | Description | Status |
-|-----|-------------|--------|
-| 01-AWS-Console | Create and manage S3 buckets via Console | ✅ Ready (add screenshots) |
-| 02-AWS-CLI | Configure CLI, create/upload/list S3 objects | ✅ Ready (add commands output screenshots) |
-| 03-AWS-SDK | Boto3 examples to list/upload S3 objects | ✅ Ready (add script output screenshots) |
-
----
-
-## 🛠️ How to use (كيفية الاستخدام)
-1. فك الضغط أو استنساخ الريبو محليًا.  
-   ```bash
-   git clone https://github.com/<username>/aws-hands-on-labs.git
-   cd aws-hands-on-labs
-   ```
-2. افتح ملف الـ Markdown الخاص بكل تجربة وأضف لقطات الشاشة داخل `images/` ثم أضف روابط الصور داخل الملفات.  
-3. أضف commit وادفع التحديثات إلى GitHub:
-   ```bash
-   git add .
-   git commit -m "Add lab documentation and screenshots"
-   git push origin main
-   ```
-
----
-
-## 📌 Author / المؤلف
-**Ahmed Hossam** — AWS learning & hands-on documentation.
-
----
-
-## 🔗 Useful Links / روابط مفيدة
-- AWS CLI docs: https://docs.aws.amazon.com/cli/
-- Boto3 docs: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
-- AWS Free Tier: https://aws.amazon.com/free
+│
+├── 03-AWS-SDK/                 # SDK (Python Boto3) Lab
+│   └── sdk-lab.md
+│
+├── images/                     # Screenshots for all labs
+│   ├── console-create-bucket.png
+│   ├── cli-aws-config.png
+│   └── sdk-list-buckets.png
+│
+└── .gitignore
