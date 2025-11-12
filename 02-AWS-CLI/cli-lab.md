@@ -1,37 +1,28 @@
-# 💻 AWS CLI Lab / تجربة سطر أوامر AWS
+# 💻 AWS Command Line Interface (CLI) Lab
 
-## الهدف / Objective
-إعداد AWS CLI، إنشاء S3 bucket، رفع ملف، وعرض محتويات الـ bucket باستخدام أوامر CLI.
+---
 
-## الإعداد (Setup)
-1. نزّل وثبّت AWS CLI v2: https://aws.amazon.com/cli/
-2. اعدد الـ credentials:
-   ```bash
-   aws configure
-   # أدخل Access Key ID و Secret Access Key (من IAM user)
-   # Region: eu-central-1
-   # Output: json
-   ```
+## 🎯 Objective
+This lab demonstrates how to use the **AWS Command Line Interface (CLI)** to interact with **Amazon S3**.  
+By the end of this lab, I successfully configured the AWS CLI, created a new S3 bucket, uploaded a resume PDF file, and verified the upload using CLI commands.
 
-## أوامر أساسية (Commands)
+---
+
+## 🧰 Prerequisites
+
+Before running any commands, ensure that:
+- AWS CLI v2 is installed ✅  
+- You have your **Access Key ID** and **Secret Access Key** ✅  
+- Your AWS account is active and within the Free Tier limits ✅  
+
+If not installed, download the CLI from: [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/)
+
+---
+
+## 🪪 Step 1 – Configure AWS CLI
+
+### 🧩 Description
+To allow the CLI to connect to my AWS account, I configured it using the command below:
+
 ```bash
-# قائمة البكتس
-aws s3 ls
-
-# انشاء bucket
-aws s3 mb s3://ahmed-cli-bucket
-
-# رفع ملف
-aws s3 cp test.txt s3://ahmed-cli-bucket/
-
-# عرض الملفات داخل البكت
-aws s3 ls s3://ahmed-cli-bucket/
-```
-
-## Screenshots / لقطات شاشة
-نافذة التيرمنال: احفظ لقطات للشاشة بعد كل أمر مهم و ضعها داخل `images/` مثل:
-- `images/cli-aws-config.png`
-- `images/cli-upload-output.png`
-
-## AWS Docs reference
-https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+aws configure
