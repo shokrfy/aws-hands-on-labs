@@ -52,7 +52,7 @@ The CLI will prompt you for four key pieces of information. Enter the values car
 
 The following screenshot illustrates the expected interactive session. **(Note: In a final document, this image should be annotated to highlight where each credential is entered.)**
 
-![AWS CLI Configure Command Output](images/cli-configure.png)
+![AWS CLI Configure Command Output](H:\nti cloud\Doucmintation\aws-hands-on-labs\images/cli-configure.png)
 
 ---
 
@@ -72,7 +72,7 @@ aws s3 mb s3://your-unique-bucket-name
 
 A successful creation will confirm the bucket location. If the name is already taken, the CLI will return an error, and you must choose a different name.
 
-![AWS CLI Make Bucket Command Output](images/cli-create-bucket.png)
+![AWS CLI Make Bucket Command Output](H:\nti cloud\Doucmintation\aws-hands-on-labs\images/cli-create-bucket.png)
 
 ---
 
@@ -97,7 +97,7 @@ aws s3 cp Ahmed_Hossam_CV.pdf s3://your-unique-bucket-name/
 
 The output will display the upload progress and a final confirmation of the file transfer.
 
-![AWS CLI Copy Command Output](images/cli-upload-cv.png)
+![AWS CLI Copy Command Output](H:\nti cloud\Doucmintation\aws-hands-on-labs\images/cli-upload-cv.png)
 
 ---
 
@@ -115,7 +115,7 @@ aws s3 ls s3://your-unique-bucket-name/
 
 The output will list all objects in the bucket, including the date/time of upload, size, and the object key (filename).
 
-![AWS CLI List Bucket Command Output](images/cli-list-bucket-after-upload.png)
+![AWS CLI List Bucket Command Output](H:\nti cloud\Doucmintation\aws-hands-on-labs\images/cli-list-bucket-after-upload.png)
 
 ---
 
