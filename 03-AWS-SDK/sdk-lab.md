@@ -1,35 +1,27 @@
-# 🐍 AWS SDK (Python - Boto3) Lab / تجربة بايثون Boto3
+# 🐍 AWS SDK (Python - Boto3) Lab
 
-## الهدف / Objective
-استخدام Boto3 للتعامل برمجياً مع S3: استعراض البكتس، رفع ملف، وتحميل ملف.
+---
 
-## الإعداد (Setup)
-```bash
-python -m venv .venv
-source .venv/bin/activate   # on Windows: .\.venv\Scripts\activate
-pip install boto3
-```
+## 🎯 Objective
+This lab demonstrates how to interact with **Amazon S3** programmatically using **Python (Boto3)**.  
+Tasks performed:
+- List S3 buckets
+- Create a bucket (if needed)
+- Upload a file (resume or test.txt)
+- Generate a secure pre-signed URL for sharing
 
-تأكد أن بيانات الاعتماد معرفة في `~/.aws/credentials` أو استخدم boto3 session.
+---
 
-## مثال كود (Code example)
+## 🧰 Prerequisites
+- Python 3.x installed  
+- A virtual environment is recommended (`python -m venv .venv`)  
+- Boto3 installed (`pip install boto3`)  
+- AWS credentials configured (`aws configure`) or environment variables set
+
+---
+
+## ⚙️ Script (s3_lab.py)
+A simple script located at `03-AWS-SDK/s3_lab.py` performs all actions in this lab.
+
 ```python
-import boto3
-
-s3 = boto3.client('s3')
-# List buckets
-response = s3.list_buckets()
-print('Buckets:')
-for b in response['Buckets']:
-    print(' -', b['Name'])
-
-# Upload file
-s3.upload_file('test.txt', 'ahmed-sdk-bucket', 'test.txt')
-print('Uploaded test.txt to ahmed-sdk-bucket')
-```
-
-## Screenshots / لقطات شاشة
-ضع صورة لمخرج الكود في الترمينال `images/sdk-list-buckets.png`
-
-## AWS Docs reference
-https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+# (See the script in repository: 03-AWS-SDK/s3_lab.py)
